@@ -23,24 +23,36 @@ IMPRIMIR "Seleccione una opción:"
   
 MIENTRAS opción > "5" HACER
     IMPRIMIR "Gestor de Notas Académicas"
+    
     IMPRIMIR "1. Registrar nuevo curso y nota"
+    
     IMPRIMIR "2. Mostrar todas las notas"
+    
     IMPRIMIR "3. Eliminar curso y nota"
+    
     IMPRIMIR "4. Calcular promedio general"
+    
     IMPRIMIR "5. Salir"
+    
 Leer opción   
     SI opción = "1" ENTONCES
         (registrar curso y nota)
+        
     SINO SI opción = "2" ENTONCES
         (mostrar todas las notas)
+        
     SINO SI opción = "3" ENTONCES
         (Eliminar curso y nota)
+        
     SINO SI opción = "4" ENTONCES
         (Calcular promedio)
+        
     SINO SI opción = "5" ENTONCES
         IMPRIMIR "Saliendo del gestor de notas."
+        
     SINO
         IMPRIMIR "Opción no valida. Intente de nuevo."
+        
     FIN_SI
 
 FIN_MIENTRAS
